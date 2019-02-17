@@ -78,3 +78,18 @@ body:not(.header-demo) .header.header.navbar-scrolling .navbar {
 .b-blockquote-3 .b-blockquote__cite {
     padding-left: 0;
 }
+
+.b-title-page__title {
+    margin-top: 0;
+}
+
+.ui-form input:focus, .ui-form textarea:focus {
+box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+}
+
+.ui-form input:focus, .ui-form textarea:focus, .ui-form select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
