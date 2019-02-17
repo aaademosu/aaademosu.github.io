@@ -1,0 +1,80 @@
+body {
+	color: #000;
+	background-color: transparent;
+	background: transparent;
+}
+
+.navbar {
+    padding-top: 0px;
+}
+
+.header-navibox-1, .header-navibox-2, .header-navibox-3, .header-navibox-4 {
+    padding: 0;
+}
+
+.header {
+	min-height: 96px;
+}
+
+.navbar .navbar-nav > li > a {
+    font-size: 15px;
+}
+
+
+.header-navibox-2, .header-navibox-3, .header-navibox-4 {
+    padding-top: 28px;
+}
+
+body:not(.header-demo) .header.header.navbar-scrolling .navbar {
+    border-bottom: transparent;
+    border-bottom: none;
+}
+
+.main-slider .sp-next-arrow, .main-slider .sp-previous-arrow {
+    /*background-color: #D7B740;*/
+    background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:visited {
+	color: #D7B740;
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+.footer:before {
+    top: -20px;
+    height: 100px;
+    margin-left: -200px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    content: '';
+}
+
+.footer__main {
+    padding-bottom: 16px;
+}
+
+.footer__logo {
+    margin-bottom: 24px;
+}
+
+.footer .footer-form {
+    margin-bottom: 0;
+}
+.footer .footer-section {
+    margin-top: 35px;
+}
+
+.section-default {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.b-blockquote-3 .b-blockquote__cite {
+    padding-left: 0;
+}
