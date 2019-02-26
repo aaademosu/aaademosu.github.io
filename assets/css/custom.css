@@ -93,3 +93,32 @@ box-shadow: none;
 outline-offset: 0px !important;
 outline: none !important;
 }
+
+.navbar .navbar-nav > li > a {
+    color: #bb8632;
+}
+
+.toggle-menu-button .toggle-menu-button-icon span {
+    background: #bb8632;
+}
+
+body:not(.header-demo) .navbar-scrolling * {
+    color: #bb8632;
+}
+
+body:not(.header-demo) .header.navbar-scrolling .navbar .navbar-nav > li > a {
+    color: #bb8632;
+}
+
+body:not(.header-demo) .header.navbar-scrolling .navbar .toggle-menu-button .toggle-menu-button-icon span {
+    background: #bb8632;
+}
+
+
+.main-color {
+    color: #bb8632;
+}
+
+body {
+    /*color: #bb8632;*/
+}
