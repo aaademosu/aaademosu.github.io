@@ -14,12 +14,16 @@ body {
 
 .header {
 	min-height: 96px;
+	background: #000000;
 }
 
 .navbar .navbar-nav > li > a {
     font-size: 15px;
 }
 
+body:not(.header-demo) .header.navbar-scrolling {
+    background-color: #000000;
+}
 
 .header-navibox-2, .header-navibox-3, .header-navibox-4 {
     padding-top: 28px;
