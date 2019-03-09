@@ -4,12 +4,29 @@ body {
 	background: transparent;
 }
 
+.b-title-page {
+    background-image: url(../images/bg.png);
+    padding-left: 0;
+}
+
 .navbar {
     padding-top: 0px;
 }
 
 .header-navibox-1, .header-navibox-2, .header-navibox-3, .header-navibox-4 {
     padding: 0;
+}
+
+
+.b-team__inner .ui-title-inner {
+    font-size: 20px;
+}
+.b-team__category {
+    font-size: 14px;
+}
+
+.section-type-2 {
+    padding: 92px 120px 56px;
 }
 
 .header {
