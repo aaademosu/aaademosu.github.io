@@ -288,27 +288,39 @@ if ($('.selectpicker').length > 0) {
         var sliderArrows = $("#main-slider").data("slider-arrows");
         var sliderButtons = $("#main-slider").data("slider-buttons");
 
-        $( '#main-slider' ).sliderPro({
-            width:  sliderWidth,
-            height: '560px',
-            arrows: sliderArrows,
-            buttons: sliderButtons,
-            fade: true,
-            fullScreen: false,
-            touchSwipe: false,
-            autoplay: true
-        });
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $( '#main-slider' ).sliderPro({
+                arrows: sliderArrows,
+                buttons: sliderButtons,
+                fade: true,
+                fullScreen: false,
+                touchSwipe: false,
+                autoplay: true
+            });
 
-        // $( '#main-slider' ).sliderPro({
-        //     width:  sliderWidth,
-        //     height: sliderHeigth,
-        //     arrows: sliderArrows,
-        //     buttons: sliderButtons,
-        //     fade: true,
-        //     fullScreen: false,
-        //     touchSwipe: false,
-        //     autoplay: true
-        // });
+        } else {
+            $( '#main-slider' ).sliderPro({
+                width:  sliderWidth,
+                height: '560px',
+                arrows: sliderArrows,
+                buttons: sliderButtons,
+                fade: true,
+                fullScreen: false,
+                touchSwipe: false,
+                autoplay: true
+            });
+
+            // $( '#main-slider' ).sliderPro({
+            //     width:  sliderWidth,
+            //     height: sliderHeigth,
+            //     arrows: sliderArrows,
+            //     buttons: sliderButtons,
+            //     fade: true,
+            //     fullScreen: false,
+            //     touchSwipe: false,
+            //     autoplay: true
+            // });
+        }
     }
 
 
