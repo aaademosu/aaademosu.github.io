@@ -290,7 +290,7 @@ if ($('.selectpicker').length > 0) {
 
         $( '#main-slider' ).sliderPro({
             width:  sliderWidth,
-            height: sliderHeigth,
+            height: '560px',
             arrows: sliderArrows,
             buttons: sliderButtons,
             fade: true,
@@ -298,6 +298,17 @@ if ($('.selectpicker').length > 0) {
             touchSwipe: false,
             autoplay: true
         });
+
+        // $( '#main-slider' ).sliderPro({
+        //     width:  sliderWidth,
+        //     height: sliderHeigth,
+        //     arrows: sliderArrows,
+        //     buttons: sliderButtons,
+        //     fade: true,
+        //     fullScreen: false,
+        //     touchSwipe: false,
+        //     autoplay: true
+        // });
     }
 
 
