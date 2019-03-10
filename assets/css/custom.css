@@ -143,3 +143,40 @@ body:not(.header-demo) .header.navbar-scrolling .navbar .toggle-menu-button .tog
 body {
     /*color: #bb8632;*/
 }
+
+
+.parallax {
+    background-attachment: initial;
+    background-size: initial;
+}
+.b-title-page {
+    background-color: #000;
+    background-image: url(../images/bg-smaller.png);
+    /*background-image: url(assets/images/bg-smaller.png);*/
+    /*padding-left: 0;*/
+    padding: 70px 0 60px 0;
+    background-position: center center;
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-2 {
+        margin-left: 12.66666667%;
+    }
+    .col-md-8 {
+        width: 68.66666667%;
+    }
+    .content-section {
+        min-height: 360px;
+    }
+    .parallax {
+      text-align: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      /*background-size: cover;*/
+    }
+    .b-title-page {
+      background-image: url(../images/bg.png);
+      /*background-image: url(assets/images/bg.png);*/
+    }
+}
