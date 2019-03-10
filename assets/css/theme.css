@@ -2112,7 +2112,8 @@ input:-ms-input-placeholder {
 .section-form-contact_color_white .b-form-contact {
   max-width: 640px;
 }
-
+/*
+*/
 .section-form-contact_color_white .form-control::-webkit-input-placeholder {
   color: #fff;
   border-bottom-color: #ffa88c;
