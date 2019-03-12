@@ -4,6 +4,14 @@ body {
 	background: transparent;
 }
 
+.footer {
+    color: #fff;
+    background-color: #000;
+}
+
+.footer:before {
+}
+
 .b-title-page {
     background-image: url(../images/bg.png);
     padding-left: 0;
@@ -72,7 +80,8 @@ body:not(.header-demo) .header.header.navbar-scrolling .navbar {
     height: 100px;
     margin-left: -200px;
     border-radius: 50%;
-    background-color: #1f1f1f;
+    /*background-color: #1f1f1f;*/
+    background-color: #000;
     content: '';
 }
 
@@ -82,6 +91,10 @@ body:not(.header-demo) .header.header.navbar-scrolling .navbar {
 
 .footer__logo {
     margin-bottom: 24px;
+}
+
+.footer__bottom {
+    background-color: #000;
 }
 
 .footer .footer-form {
