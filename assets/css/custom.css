@@ -171,6 +171,12 @@ body {
     background-position: center center;
 }
 
+@media (min-width: 640px) {
+    .content-section {
+        min-height: 360px;
+    }
+}
+
 @media (min-width: 992px) {
     .col-md-offset-2 {
         margin-left: 12.66666667%;
@@ -178,9 +184,7 @@ body {
     .col-md-8 {
         width: 68.66666667%;
     }
-    .content-section {
-        min-height: 360px;
-    }
+
     .parallax {
       text-align: center;
       background-repeat: no-repeat;
