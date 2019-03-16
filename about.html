@@ -11,6 +11,7 @@
     <meta name="HandheldFriendly" content="true"/>
     <link rel="stylesheet" href="assets/css/master.css"/>
     <link rel="stylesheet" href="assets/css/custom.css"/>
+    <link  href="https://unpkg.com/nanogallery2@2.3.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico"/><!--[if lt IE 9 ]>
     <script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
@@ -39,6 +40,20 @@
         .section-type-2 {
           padding: 92px 120px 56px;
         }
+      }
+
+      .nGY2 .nanoGalleryLBarOff {
+        margin: 0;
+        background-color: #fff;
+        height: 0;
+      }
+      .nGY2GallerySub {
+        width: 100% !important;
+      }
+      #whyposh {
+        background-color: #f7f7f7;
+        min-height: 857px;
+        max-height: 857px;
       }
     </style>
   </head>
@@ -122,9 +137,8 @@
       </div>
       
 
-<!-- <section class="section-default"> -->
       <div class="block-table block-table-lg">
-        <div class="block-table__cell col-lg-6">
+        <div class="block-table__cell col-lg-6" id="whyposh">
           <section class="section-type-2 bg-grey">
             <div class="ui-decor-1"><img src="assets/media/general/ui-decor-1.png" alt="decor"></div>
             <h2 class="ui-title-block">Why Choose<span class="text-primary"> Us</span></h2>
@@ -136,25 +150,18 @@
               </div>
             </section>
 
-<!--
-            <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-firework"></i>
-              <div class="b-advantages-2__inner">
-                <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">Dedicated Venues &amp; Arrangements</h3>
-                <div class="b-advantages-2__info">We need content here.</div>
-              </div>
-            </section>
--->
-
             <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-technology"></i>
               <div class="b-advantages-2__inner">
                 <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">All Types of Events</h3>
                 <div class="b-advantages-2__info"> We need content here.</div>
               </div>
             </section>
-
           </section>
         </div>
-        <div class="block-table__cell col-lg-6"><img src="assets/images/collage.png" alt="event photo"></div>
+        <div class="block-table__cell col-lg-6">
+          <div id="nanogallery2"></div>
+          <!-- <img src="assets/images/collage.png" alt="event photo"> -->
+        </div>
       </div>
 
 
@@ -164,7 +171,7 @@
             <div class="col-xs-12">
               <div class="ui-decor-1"><img src="assets/media/general/ui-decor-1.png" alt="decor" class="center-block"></div>
               <div class="text-center">
-                <h2 class="ui-title-block"><span class="text-primary"> Our </span> Team </h2>
+                <h2 class="ui-title-block" style="text-align: center;"><span class="text-primary"> Our </span> Team </h2>
                 <div class="ui-subtitle-block">We make your events smart & impactful by providing personalised services.</div>
               </div>
             </div>
@@ -231,7 +238,6 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-11">
-
                 <div data-pagination="true" data-navigation="false" data-single-item="true" data-auto-play="7000" data-transition-style="fade" data-main-text-animation="true" data-after-init-delay="3000" data-after-move-delay="1000" data-stop-on-hover="true" class="owl-carousel owl-theme owl-theme_mod-a enable-owl-carousel">
                   <blockquote style="color: #bb8532;" class="b-blockquote b-blockquote-3 b-blockquote-3_w_bg">
                     <p>It was a pleasure working with your team during my 70th birthday celebration. Everything was properly thought of and executed. I had absolutely no cause to worry. My party was the talk of the town and I can confidently say it was the best day of my life thanks to Posh Royal Events &amp; Style.</p>
@@ -247,7 +253,6 @@
                     </footer>
                   </blockquote>
                 </div>
-
             </div>
           </div>
         </div>
@@ -335,34 +340,48 @@
     
     
     <script src="assets/libs/jquery-1.12.4.min.js"></script>
-    <script src="assets/libs/jquery-migrate-1.2.1.js"></script>
-    <!-- Bootstrap-->
     <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
-    <!-- User customization-->
-    <script src="assets/js/custom.js"></script>
-    <!---->
-    <!-- Slider 1-->
     <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <!-- Slider 2-->
-    <script src="assets/plugins/bxslider/vendor/jquery.easing.1.3.js"></script>
-    <script src="assets/plugins/bxslider/vendor/jquery.fitvids.js"></script>
-    <script src="assets/plugins/bxslider/jquery.bxslider.min.js"></script>
-    <!-- Pop-up window-->
-    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- Headers scripts-->
+
     <script src="assets/plugins/headers/slidebar.js"></script>
     <script src="assets/plugins/headers/header.js"></script>
-    <!-- Parallax-->
     <script src="assets/plugins/stellar/jquery.stellar.min.js"></script>
-    <!-- Filter and sorting images-->
-    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/plugins/isotope/imagesLoaded.js"></script>
-    <!-- Progress numbers-->
-    <script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
-    <script src="assets/plugins/rendro-easy-pie-chart/waypoints.min.js"></script>
-    <!-- Animations-->
-    <script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
-    <!-- Main slider-->
-    <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.3.0/dist/jquery.nanogallery2.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+
+        jQuery("#nanogallery2").nanogallery2( {
+          thumbnailHeight:  224,
+          thumbnailWidth:   224,
+          galleryTheme: 'light',
+          colorScheme: 'light',
+          thumbnailGutterWidth: 0,
+          thumbnailGutterHeight: 0,
+          thumbnailBorderHorizontal: 0,
+          thumbnailBorderVertical:   0,
+          itemsBaseURL:     "https://aaademosu.github.io/assets/images/gallery/",
+          galleryMosaic: [
+             { "w": 2, "h": 2, "c": 1, "r": 1 },
+             { "w": 1, "h": 1, "c": 3, "r": 1 },
+             { "w": 1, "h": 1, "c": 3, "r": 2 },
+             { "w": 1, "h": 1, "c": 1, "r": 3 },
+             { "w": 1, "h": 1, "c": 1, "r": 4 },
+             { "w": 2, "h": 2, "c": 2, "r": 3 },
+           ],
+          items: [
+              { src: '6e4d2f64-3900-4d94-b043-a2cbe8e4b947.JPG', srct: '6e4d2f64-3900-4d94-b043-a2cbe8e4b947.JPG', title: '' },
+              { src: 'ad5e2b05-f9be-49ad-9e17-5f18688db58f.JPG', srct: 'ad5e2b05-f9be-49ad-9e17-5f18688db58f.JPG', title: '' },
+              { src: '47623a13-d7d1-4200-b857-39e2f4fad2d8.JPG', srct: '47623a13-d7d1-4200-b857-39e2f4fad2d8.JPG', title: '' },
+              { src: '8b575387-8e08-49f8-8884-2bb623f8b8c6.JPG', srct: '8b575387-8e08-49f8-8884-2bb623f8b8c6.JPG', title: '' },
+              { src: 'b3c0cd56-ae63-45bc-91e1-7c95ed147743.JPG', srct: 'b3c0cd56-ae63-45bc-91e1-7c95ed147743.JPG', title: '' },
+              { src: 'f5025db1-5477-402c-a5fe-e263a3562b74.JPG', srct: 'f5025db1-5477-402c-a5fe-e263a3562b74.JPG', title: '' },
+              // { src: '', srct: '', title: '' },
+            ]
+        });
+      });
+    </script>
   </body>
 </html>
