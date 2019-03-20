@@ -55,11 +55,19 @@
         min-height: 857px;
         max-height: 857px;
       }
+      .parent {
+        font-size: 15px;
+        list-style-type: decimal;
+      }
+      .nested {
+        list-style-type: disc;
+        /*margin-left: 21px;*/
+      }
     </style>
   </head>
   <body>
 
-    <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css">
+    <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css" id="about">
       <div data-off-canvas="mobile-slidebar left overlay">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
@@ -152,13 +160,39 @@
 
             <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-technology"></i>
               <div class="b-advantages-2__inner">
-                <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">All Types of Events</h3>
-                <div class="b-advantages-2__info"> We need content here.</div>
+                <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">All Kinds Of Events</h3>
+                <div class="b-advantages-2__info">
+                  <ul>
+                    <li class="parent"> Corporate Events </li>
+
+                    <ul>
+                      <li class="nested"> Annual General Meetings </li>
+                      <li class="nested"> Seminars/Conferences </li>
+                      <li class="nested"> Executive Retreats </li>
+                      <li class="nested"> Awards and Appreciation </li>
+                      <li class="nested"> Team Building Events </li>
+                      <li class="nested"> Product launch Events </li>
+                      <li class="nested"> ...and more! </li>
+                    </ul>
+                    <li class="parent"> Social Events </li>
+
+                    <ul>
+                      <li class="nested"> Weddings </li>
+                      <li class="nested"> Bridal Showers </li>
+                      <li class="nested"> Baby Showers </li>
+                      <li class="nested"> Birthday Parties </li>
+                      <li class="nested"> Graduation Parties </li>
+                      <li class="nested"> Reunions </li>
+                      <li class="nested"> ...and more! </li>
+                    </ul>
+                  </ul>
+
+                </div>
               </div>
             </section>
           </section>
         </div>
-        <div class="block-table__cell col-lg-6">
+        <div class="block-table__cell col-lg-6" id="whyposhGallery">
           <div id="nanogallery2"></div>
           <!-- <img src="assets/images/collage.png" alt="event photo"> -->
         </div>
@@ -348,14 +382,54 @@
     <script src="assets/plugins/stellar/jquery.stellar.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
-
     <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.3.0/dist/jquery.nanogallery2.min.js"></script>
     <script>
+function isElementVisible(el) {
+  var rect     = el.getBoundingClientRect(),
+    vWidth   = window.innerWidth || doc.documentElement.clientWidth,
+    vHeight  = window.innerHeight || doc.documentElement.clientHeight,
+    efp      = function (x, y) { return document.elementFromPoint(x, y) };     
+
+  // Return false if it's not in the viewport
+  if (rect.right < 0 || rect.bottom < 0  || rect.left > vWidth || rect.top > vHeight ) {
+    return false;
+  }
+
+  return ( el.contains( efp( rect.left,  rect.top ) ) );
+  // Return true if any of its four corners are visible
+  //return ( el.contains(efp(rect.left,  rect.top)) ||  el.contains(efp(rect.right, rect.top)) ||  el.contains(efp(rect.right, rect.bottom)) ||  el.contains(efp(rect.left,  rect.bottom)) );
+}
+
+window.addEventListener('load', function() {
+  var vendor = document.getElementById('whyposhGallery');
+  var observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        console.log('in the view');
+        setTimeout(function() {
+          var gHeight = $('#whyposhGallery').height();
+          $('#whyposh').css( { 'min-height': gHeight, 'max-height': gHeight } );
+          observer.disconnect();
+        }, 1000);
+      } else {
+        console.log('out of view');
+      }
+    });
+  }, {
+    root: document.querySelector('#about'),
+    rootMargin: '0px',
+    threshold: [0, 0.25, 0.75, 1]
+  });
+  observer.observe(vendor);
+});
+
       jQuery(document).ready(function () {
+        var gWidth = $('#whyposhGallery').width();
+          // thumbnailWidth:   'auto',
 
         jQuery("#nanogallery2").nanogallery2( {
           thumbnailHeight:  224,
-          thumbnailWidth:   224,
+          thumbnailWidth:   gWidth / 3,
           galleryTheme: 'light',
           colorScheme: 'light',
           thumbnailGutterWidth: 0,
