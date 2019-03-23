@@ -277,7 +277,7 @@
 -->
       <div class="block-table block-table-md" style="max-height: 646px;">
         <div class="block-table__cell col-md-6">
-            <div id="nanogallery2"></div>
+          <div id="nanogallery2"></div>
         </div>
         <div class="block-table__cell col-md-6">
           <section style="background-color: rgb(31, 31, 31);" data-stellar-background-ratio="0.4" class="section-form-contact section-form-contact_color_white section-texture bg-primary stellar">
@@ -396,10 +396,11 @@
     <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.3.0/dist/jquery.nanogallery2.min.js"></script>
     <script>
       jQuery(document).ready(function () {
+        var gWidth = $('#nanogallery2').width();
 
         jQuery("#nanogallery2").nanogallery2( {
           thumbnailHeight:  224,
-          thumbnailWidth:   224,
+          thumbnailWidth:   gWidth / 3,
           galleryTheme: 'light',
           colorScheme: 'light',
           thumbnailGutterWidth: 0,
