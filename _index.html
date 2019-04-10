@@ -17,12 +17,6 @@
     <![endif]-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <style type="text/css">
-@media (min-width: 1366px) {
-  .footer__main .container {
-    width: 1280px;
-  }
-}
-
 .slider_title {
   font-style: italic;
   letter-spacing: 4px;
@@ -84,8 +78,6 @@
     </style>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>    
 
     <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css">
       <div data-off-canvas="mobile-slidebar left overlay">
@@ -332,7 +324,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="footer-section">
                   <h3 class="footer-section__title ui-title-inner"> About Posh Royal</h3>
                   <div class="footer-section__subtitle">The Events Specialists!</div>
@@ -341,32 +333,27 @@
                   </div><a href="about.html" class="btn btn-default btn-xs"><i class="icon"></i> Read More</a>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <section class="footer-section">
                   <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Keep In Touch</h3>
-                  <div class="footer__contact"><i class="icon icon-map"></i> 5th Avenue, Q Close, House 8, Festac<br /> Town, Lagos</div>
+                  <div class="footer__contact"><i class="icon icon-map"></i> 5th Avenue, Q Close, House 8, Festac Town, Lagos</div>
                   <div class="footer__contact"><i class="icon icon-call-in"></i> +2348023630583, +2348081399834</div>
                   <div class="footer__contact"><i class="icon icon-envelope-open"></i> info@poshroyaleventsstyle.com</div>
                   <div class="footer__contact"><i class="icon icon-clock"></i> Mon - Sat 8.00 am - 6.00 pm</div>
                 </section>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <section class="footer-section">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h3 style="margin-top: 0;" class="footer-section__title ui-title-inner"> Facebook </h3>
-                      <div class="fb-page" data-href="https://www.facebook.com/Posh-Royal-Events-Style-732258220494872/" data-tabs="timeline" data-height="313" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Posh-Royal-Events-Style-732258220494872/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Posh-Royal-Events-Style-732258220494872/">Posh Royal Events &amp; Style</a></blockquote></div>
-                    </div>
-                    <div class="col-md-6" style="padding: 0;">
-                      <h3 style="margin-top: 0;" class="footer-section__title ui-title-inner"> Instagram </h3>
-                      <div class="slider-pro" >
-                        <div class="sp-slides" id="instafeed">
-                        </div>
-                      </div>
-                      <h3 style="margin-top: 0;text-align: center;" class="footer-section__title ui-title-inner"> <a style="color: #fff;text-align: center;" href="//instagram.com/posh_royal_events_style">FOLLOW US</a> </h3>
+                  <div class="fb-page"></div>
 
-                    </div>
-                  </div>
+                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Quick Links</h3>
+                  <ul class="footer-list list list-mark-4 list-unstyled">
+                    <li class="footer-list__item"><a href="services.html" class="footer-list__link">Our Services</a></li>
+                    <li class="footer-list__item"><a href="team.html" class="footer-list__link">Our Team</a></li>
+                    <li class="footer-list__item"><a href="about.html" class="footer-list__link">About Us</a></li>
+                    <li class="footer-list__item"><a href="javascript:void(0)" class="footer-list__link">News Blog</a></li>
+                    <li class="footer-list__item"><a href="contact.html" class="footer-list__link">Get In Touch</a></li>
+                  </ul>
                 </section>
               </div>
             </div>
@@ -390,13 +377,15 @@
         </div>
       </footer>
     </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>    
+    
     <script src="assets/libs/jquery-1.12.4.min.js"></script>
     <script src="assets/libs/jquery-migrate-1.2.1.js"></script>
     <!-- Bootstrap-->
     <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
     <!-- User customization-->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/instafeed.min.js"></script>
     <!---->
     <!-- Slider 1-->
     <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
@@ -421,29 +410,5 @@
     <script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
     <!-- Main slider-->
     <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
-
-    <script type="text/javascript">
-      // template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
-      // template: '<div class="sp-slide"> <img class="sp-image" src="{{image}}"/> </div>',
-
-      var feed = new Instafeed({
-        get: 'user',
-        userId: '9668316242',
-        clientId: '47778d869f554d29956ddebd94a41bd6',
-        accessToken: '9668316242.47778d8.dcb49be5d3cc48dca9884346f78f3f35',
-        sortBy: 'most-recent',
-        limit: 4,
-        template: '<div class="col-md-6" style="padding-left: 0;margin-bottom:12px;"> <a class="animation" href="{{link}}"> <img class=" instagram-image" src="{{image}}"/> </a> </div>',
-        after: function() {
-          // $( '#instafeed' ).sliderPro({
-          //   arrows: false,
-          //   buttons: false,
-          //   fade: true,
-          //   autoplay: true,
-          // });
-        }
-      });
-      feed.run();
-    </script>
   </body>
 </html>

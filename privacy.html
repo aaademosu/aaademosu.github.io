@@ -21,13 +21,59 @@
           width: 1280px;
         }
       }
+      .section-type-2 {
+        padding: 12px;
+      }
+      .ui-title-block,
+      .ui-decor-1 {
+        text-align: center;
+      }
+
+      .b-advantages-2__title {
+        padding-top: 0;
+      }
+
+      @media (min-width: 992px) {
+        .b-advantages-2__title {
+          padding-top: 36px;
+        }
+        .ui-title-block,
+        .ui-decor-1 {
+          text-align: initial;
+        }
+        .section-type-2 {
+          padding: 32px 120px 32px;
+        }
+      }
+
+      .nGY2 .nanoGalleryLBarOff {
+        margin: 0;
+        background-color: #fff;
+        height: 0;
+      }
+      .nGY2GallerySub {
+        width: 100% !important;
+      }
+      #whyposh {
+        background-color: #f7f7f7;
+        min-height: 857px;
+        max-height: 857px;
+      }
+      .parent {
+        font-size: 15px;
+        list-style-type: decimal;
+      }
+      .nested {
+        list-style-type: disc;
+        /*margin-left: 21px;*/
+      }
     </style>
   </head>
   <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>    
-
-    <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css">
+    
+    <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css" id="about">
       <div data-off-canvas="mobile-slidebar left overlay">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
@@ -54,6 +100,7 @@
         </nav>
         <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
       </div>
+
 
       <header class="header header-boxed-width header-background-trans header-logo-black header-topbarbox-1-left header-topbarbox-2-right header-navibox-1-left header-navibox-2-right header-navibox-3-right header-navibox-4-right">
         <div class="container container-boxed-width">
@@ -86,88 +133,26 @@
         </div>
       </header>
 
-      <div class="b-title-page area-bg area-bg_dark parallax">
-        <div class="area-bg__inner">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <h1 class="b-title-page__title">Contact Us</h1>
-                <ol class="breadcrumb">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="active">Get in Touch</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <section class="section-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="ui-decor-1"><img src="assets/media/general/ui-decor-1.png" alt="decor" class="center-block"></div>
-              <div class="text-center">
-                <h2 class="b-contact__title ui-subtitle-block">Contact us if you need our services. We will be happy to make your events memorable!</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3">
-              <div style="background-color: #000;" data-stellar-background-ratio="0.4" class="b-contact stellar section-texture section-texture_green section-radius">
-                <div class="b-contact__name">Address</div>
-                <div class="b-contact__info"> 5th Avenue, Q Close, House 8, Festac </div>
-                <!-- <div class="b-contact__info"> 5th Avenue, Q Close, House 8, Festac Town, Lagos </div> -->
-                <div class="b-contact__icon icon-map"></div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3">
-              <div style="background-color: #bb8632;" data-stellar-background-ratio="0.4" class="b-contact stellar section-texture section-texture_blue section-radius">
-                <div class="b-contact__name">Phone</div>
-                <div class="b-contact__info">(+234) 802 363 0583</div>
-                <div class="b-contact__info">(+234) 808 139 9834</div>
-                <div class="b-contact__icon icon-call-in"></div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3">
-              <div style="background-color: #000;" data-stellar-background-ratio="0.4" class="b-contact stellar section-texture section-texture_grey section-radius">
-                <div class="b-contact__name">Email</div>
-                <div class="b-contact__info">info@poshroyaleventsstyle.com</div>
-                <div class="b-contact__icon icon-envelope-open"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="section-form-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="ui-title-block"> feedback form</h2>
-              <div id="success"></div>
-              <form id="contactForm" action="#" method="post" class="b-form-contacts ui-form">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input id="user-name" type="text" name="user-name" placeholder="Your Name" required="required" class="form-control"/>
-                    <input id="user-phone" type="tel" name="user-phone" placeholder="Your Tel" class="form-control"/>
-                  </div>
-                  <div class="col-md-6">
-                    <input id="user-email" type="email" name="user-email" placeholder="Your Email" class="form-control"/>
-                    <input id="user-subject" type="text" name="user-subject" placeholder="Where do you heard about us?" class="form-control last-block_mrg-btn_0"/>
-                  </div>
+      <div class="block-table block-table-lg">
+        <div class="block-table__cell col-lg-8" id="">
+          <section class="section-type-2 bg-grey">
+            <div class="ui-decor-1"><img src="assets/media/general/ui-decor-1.png" alt="decor"></div>
+            <h2 class="ui-title-block"> <span class="text-primary"> Our Privacy Policy </span></h2>
+            <div class="ui-subtitle-block"> Information Security </div>
+            <section class="b-advantages-2 b-advantages-2_mod-a" style="padding-left: 0;">
+              <div class="b-advantages-2__inner">
+                <div class="b-advantages-2__info">
+We have a variety of security measures put in place to secure your personal information stored on our website.
+<br />
+
+We do not sell or trade customer data to external parties except third parties who are part of the business model and are part of the service delivery process. They however have an obligation to keep this information confidential.
+<br />
+We may also release your information appropriately when a security need arises or its in a case of illegal crimes committed to enable law enforcement carry out their duties
                 </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <textarea id="user-message" rows="5" placeholder="Your Message ..." required="required" class="form-control"></textarea>
-                    <button style="background-color: #131720;background: #131720;" class="btn btn-primary btn-block"> Submit Feedback </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="col-md-6">
-              <div id="map" class="map"></div>
-            </div>
-          </div>
+              </div>
+            </section>
+
+          </section>
         </div>
       </div>
 
@@ -255,36 +240,13 @@
     
     
     <script src="assets/libs/jquery-1.12.4.min.js"></script>
-    <script src="assets/libs/jquery-migrate-1.2.1.js"></script>
-    <!-- Bootstrap-->
     <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
-    <!-- User customization-->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/instafeed.min.js"></script>
-    <!---->
-    <!-- Slider 1-->
-    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <!-- Slider 2-->
-    <script src="assets/plugins/bxslider/vendor/jquery.easing.1.3.js"></script>
-    <script src="assets/plugins/bxslider/vendor/jquery.fitvids.js"></script>
-    <script src="assets/plugins/bxslider/jquery.bxslider.min.js"></script>
-    <!-- Pop-up window-->
-    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- Headers scripts-->
+
     <script src="assets/plugins/headers/slidebar.js"></script>
     <script src="assets/plugins/headers/header.js"></script>
-    <!-- Parallax-->
     <script src="assets/plugins/stellar/jquery.stellar.min.js"></script>
-    <!-- Filter and sorting images-->
-    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/plugins/isotope/imagesLoaded.js"></script>
-    <!-- Progress numbers-->
-    <script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
-    <script src="assets/plugins/rendro-easy-pie-chart/waypoints.min.js"></script>
-    <!-- Animations-->
-    <script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
-    <!-- Main slider-->
-    <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/instafeed.min.js"></script>
     <script type="text/javascript">
       var feed = new Instafeed({
         get: 'user',
@@ -298,6 +260,8 @@
         }
       });
       feed.run();
+    </script>
+    <script>
     </script>
   </body>
 </html>
